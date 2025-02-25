@@ -5,32 +5,3 @@ html {
 body {
   @apply antialiased text-gray-800;
 }
-/* Basic Reset for RTL */
-body {
-  direction: rtl; /* Sets the base direction */
-  text-align: right; /* Align text to the right */
-}
-
-/*  Mirror Common Properties */
-.ml-2 {
-  margin-right: 0.5rem; /* Changed from margin-left */
-  margin-left: unset;
-}
-
-.mr-2 {
-  margin-left: 0.5rem; /* Changed from margin-right */
-  margin-right: unset;
-}
-
-.space-x-8 > * + * {
-  margin-left: 0rem !important; /* disable default */
-  margin-right: 2rem !important;
-}
-
-.lg\:justify-start {
-  justify-content: end;
-}
-
-.md\:text-left {
-  text-align: right;
-}
